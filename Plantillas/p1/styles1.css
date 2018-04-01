@@ -48,9 +48,10 @@ a.navrigth {
 #home {
     position:relative;
 }
-#home img {
+#imghome {
   width: 100%;
   position: absolute;
+  top:60px;
 }
 .text-block {
     position: absolute;
@@ -88,7 +89,7 @@ a.navrigth {
     float: right;
     display: block;
     }
-  .topnav.responsive {position: relative;   height: auto;}
+  .topnav.responsive {position: relative;   height: auto; }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -99,7 +100,9 @@ a.navrigth {
     display: block;
     text-align: left;
   }
-
+  #imghome{
+    top: auto;
+  }
   .text-block h4 {
     font-size: 1.5em;
   }
