@@ -7,6 +7,8 @@ body {
   background-color: #333;
   position: fixed;
   width: 100%;
+  height: 60px;
+  z-index: 1000;
 }
 
 .topnav a {
@@ -36,6 +38,7 @@ body {
 #idlogo img {
   width:70px;
   height:40px;
+  position: relative;
 }
 
 a.navrigth {
@@ -43,14 +46,15 @@ a.navrigth {
 }
 
 #home {
-    position:static;
+    position:relative;
 }
 #home img {
   width: 100%;
+  position: absolute;
 }
 .text-block {
     position: absolute;
-    top: 50%;
+    top: 200px;
     left: 3%;
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     text-align:left;
@@ -66,17 +70,25 @@ a.navrigth {
 }
 
 /*********************RESPONSIVE************************************************/
-@media screen and (max-width: 650px) {
-  /*.topnav a:not(:first-child) {display: none;}*/
+@media screen and (max-width: 920px) {
+  .text-block{
+    top: 200px;
+  }
+  .text-block h4 {
+    font-size: 2.5em;
+  }
+  .text-block p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 655px) {
   a.navrigth {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .topnav.responsive {position: relative;}
+    }
+  .topnav.responsive {position: relative;   height: auto;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -88,4 +100,22 @@ a.navrigth {
     text-align: left;
   }
 
+  .text-block h4 {
+    font-size: 1.5em;
+  }
+  .text-block p {
+    font-size: 0.8em;
+  }
+  .text-block{
+    top: 180px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .text-block {
+    top: 90px;
+  }
+  .text-block h4 {
+    font-size: 1.2em;
+  }
 }
