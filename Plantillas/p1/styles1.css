@@ -53,6 +53,7 @@ a.navrigth {
   width: 100%;
   position: absolute;
   top:60px;
+  z-index: 600;
 }
 .text-block {
   position: absolute;
@@ -63,6 +64,7 @@ a.navrigth {
   font-family: Arial;
   color: #f1f1f1; /* Grey text */
   width: 90%; /* Full width */
+  z-index: 700;
 }
 .text-block h4 {
   font-size: 3em;
@@ -74,8 +76,10 @@ a.navrigth {
 /***************************ABOUT SECTION**************************************/
 #about {
   position:absolute;
-  top: 960px ;
+  top: 50px ;
   text-align: justify;
+  background-color: #d1e2ff;
+  padding: 900px 0 20px 0;
 }
 
 
@@ -86,25 +90,32 @@ footer {
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: white
+  color: white;
+  z-index: 900;
 }
 
 /*********************RESPONSIVE************************************************/
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
   #about{
-    top: 820px;
+  padding-top: 820px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #about{
+  padding-top: 770px;
   }
 }
 
 @media screen and (max-width: 1160px) {
   #about{
-    top: 770px;
+  padding-top: 700px;
   }
 }
 
 @media screen and (max-width: 1100px) {
   #about{
-    top: 700px;
+  padding-top: 650px;
   }
 }
 
@@ -119,13 +130,19 @@ footer {
     font-size: 1.2em;
   }
   #about{
-    top: 600px;
+    padding-top: 600px;
   }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 800px) {
   #about{
-    top: 530px;
+    padding-top: 530px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #about{
+    padding-top: 500px;
   }
 }
 
@@ -160,7 +177,7 @@ footer {
   }
 
   #about{
-    top:430px;
+    padding-top:370px;
   }
 }
 
@@ -172,12 +189,12 @@ footer {
     font-size: 1.2em;
   }
   #about{
-    top: 290px;
+    padding-top: 250px;
   }
 }
 
 @media screen and (max-width: 440px) {
   #about{
-    top: 230px;
+    padding-top: 180px;
   }
 }
