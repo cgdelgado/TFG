@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="main1.js"></script>
   </head>
 
   <body>
+    <!--Barra de navegación-->
       <div class="topnav" id="myTopnav">
         <a href="#home" id="idlogo">
           <img src="images/logo.png" alt="logotipo" title="Nombre de la asociación">
         </a>
-        <a class="navrigth" href="#about">Sobre nosotros</a>
+        <a class="navrigth" href="#contact">Contacto</a>
         <a class="navrigth" href="#activities">Actividades</a>
         <a class="navrigth" href="#news">Noticias</a>
         <a class="navrigth" href="#news">Galería</a>
-        <a class="navrigth" href="#contact">Contacto</a>
+        <a class="navrigth" href="#about">Sobre nosotros</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
 
+      <!--Home-->
       <div id="home">
         <img id="imghome" src="images/portada.jpg" alt="Nosotros">
         <div class="text-block">
@@ -32,7 +35,27 @@
         </div>
       </div>
 
+      <!--Footer-->
+      <footer>
+        <div id="contact" class="col-sm-4">
+         <h5>CONTACTO</h5>
+         <p>Teléfono: 988112233</p>
+         <p>Email: direccion@electronica.es</p>
+         <p>Dirección: Calle A, 13, 32000</p>
+        </div>
 
+        <div class="col-sm-4">
+         <h5>ENLACES DE INTERÉS</h5>
+        </div>
+
+        <div class="col-sm-4">
+         <h5>¡SÍGUENOS!</h5>
+         <a href="#facebook" class="fa fa-facebook-official" style="font-size:24px;color:white"></a>
+         <a href="#pinterest" class="fa fa-pinterest-p" style="font-size:24px;color:white"></a>
+         <a href="#twitter" class="fa fa-twitter-square" style="font-size:24px;color:white"></a>
+         <a href="#youtube" class="fa fa-youtube" style="font-size:24px;color:white"></a>
+        </div>
+      </footer>
 
   </body>
 </html>
