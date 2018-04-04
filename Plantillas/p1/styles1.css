@@ -25,10 +25,6 @@ a {
   transition: all 0.2s;
 }
 
-a:hover {
-  color: #f05f40;
-}
-
 h1,
 h2,
 h3,
@@ -42,10 +38,9 @@ h6 {
   background-color: #F05F40 !important;
 }
 
-.bg-dark {
-  /*background-color: #212529 !important*/;
+/*.bg-dark {
   background-color: #8C8C8C !important;
-}
+}*/
 
 .text-faded {
   color: rgba(77,77, 77, 0.7);
@@ -95,12 +90,12 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+/*  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
 }
 
-#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+/*#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #f05f40;
-}
+}*/
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
