@@ -172,7 +172,8 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("images/portada1.jpg");
+  background-color: transparent;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -319,7 +320,7 @@ header.masthead p {
 }
 
 .text-activities{
-  color: white;
+  color:#F05F40;
 }
 
 .text-news{
@@ -335,4 +336,11 @@ li {
  }
 p.text-faded {
   text-align: justify;
+}
+.box{
+  border-radius: 8px;
+  background-color: rgba(22, 22, 22, 0.7);
+}
+.text-header{
+  color: white;
 }
